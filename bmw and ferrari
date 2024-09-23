@@ -1,0 +1,32 @@
+class BMW:
+    def fuel_type(self):
+        return "Diesel"
+
+    def max_speed(self):
+        return "240 km/h"
+
+
+class Ferrari:
+    def fuel_type(self):
+        return "Petrol"
+
+    def max_speed(self):
+        return "350 km/h"
+
+
+
+def car_info(car):
+    print("Fuel Type:", car.fuel_type())
+    print("Max Speed:", car.max_speed())
+
+
+
+if __name__ == "__main__":
+    bmw = BMW()
+    ferrari = Ferrari()
+
+    print("BMW Details:")
+    car_info(bmw)
+    
+    print("\nFerrari Details:")
+    car_info(ferrari)
